@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title=title
+        link(rel="stylesheet", href="/styles/main.css")
+        link(rel="stylesheet", href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css")
+    body
+        .section
+            .left
+                h1.title message sent
+                p.text we have recieved your message request. we will reach out to you shortly.
+            .right
+                img(src="/images/undraw_Mail_sent_re_0ofv.svg").img
+        
+        script.
+            setTimeout(() => {
+                window.location = '/';
+            }, 2000)

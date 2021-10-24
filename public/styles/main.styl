@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// Variables
+primary-color = #ffffff
+accent-color = #f06449
+link-color = #35a7ff
+text-color = #282828
+
+
+*
+    box-sizing border-box
+
+body
+    padding 15px 100px
+    background-color primary-color
+    color text-color
+    font-family 'Open Sans', sans-serif
+
+a
+    text-decoration none
+    color link-color
+
+#header
+    display flex
+    justify-content space-between
+    align-items center
+    padding 20px 0
+    #header-logo
+        .logo
+            width 40px
+    #header-navigation
+        a
+            padding 0 20px
+            font-size 16px
+            opacity 0.7
+            &:hover
+                opacity 1
+                transition 150ms ease-in-out
+        .store-link
+            padding 5px 20px
+            background-color primary-color
+            border 2px solid link-color
+            border-radius 10px
+            &:hover
+                background-color link-color
+                color primary-color
+                transition 150ms ease-in-out
+
+.section
+    padding 20px 0
+    display flex
+    justify-content space-evenly
+    align-items center
+    height 100vh
+    .left, .right
+        margin 10px 20px
+        text-align center
+        flex 1 1 0px
+    .title
+        padding 0 0 10px 0
+        text-align left
+    .text
+        font-size 16px
+        padding 0
+        line-height 1.75
+        text-align left
+    .img
+        height 500px
+        width 100%
+    .push-right
+        text-align right
+        margin-top 40px
+        .link
+            padding 10px 80px
+            background-color accent-color
+            color primary-color
+            border-radius 10px
+            opacity 0.8
+            cursor pointer
+            &:hover
+                opacity 1
+                transition 150ms opacity ease-in-out
+    .input-container
+        text-align left
+        .label
+            font-size 14px
+            margin 15px 0 5px 0
+        input
+            width 100%
+            padding 5px 0px 5px 3px
+            outline none
+            font-size 16px
+            font-weight normal
+            border-radius 5px
+            border 2px solid text-color
+        .submit
+            margin-top 30px
+            background-color accent-color
+            color primary-color
+            border none
+            border-radius 5px
+            padding 10px 0
+            cursor pointer
+            opacity 0.8
+            &:hover
+                opacity 1
+                transition 150ms opacity ease-in-out
+
+#section-1
+    height 80vh
+
+#section-2
+    text-align right
+
+
+// ################################
+// #           Mobile             #
+// ################################
+
+@media screen and (max-width: 1500px)
+    body
+        padding 0 25px
+
+    #header
+        #header-navigation
+            .store-link
+                background-color link-color
+                color primary-color
+    
+    .section
+        padding 20px 0
+        flex-direction column
+        text-align center
+        .left, .right
+            padding 10px 0
+            flex none
+            width 80%
+        .img
+            width 100%
+            height auto
+        .push-right
+            text-align center
+            .link
+                padding 10px 40px
+
+    #section-1
+        .left
+            order 2
+    
+    #section-2
+        text-align center
+        .left
+            order 2
+
+    #section-3
+        .left
+            order 2
