@@ -53,6 +53,7 @@ a {
   margin: 10px 20px;
   text-align: center;
   flex: 1 1 0px;
+  max-width: 700px;
 }
 .section .title {
   padding: 0 0 10px 0;
@@ -101,6 +102,7 @@ a {
   border: 2px solid #282828;
 }
 .section .input-container .submit {
+  -webkit-appearance: none;
   margin-top: 30px;
   background-color: #f06449;
   color: #fff;
@@ -120,9 +122,15 @@ a {
 #section-2 {
   text-align: right;
 }
+#coming-soon {
+  height: 80vh;
+}
 @media screen and (max-width: 1500px) {
   body {
     padding: 0 25px;
+  }
+  #header {
+    margin-bottom: 20px;
   }
   #header #header-navigation .store-link {
     background-color: #35a7ff;
@@ -132,6 +140,7 @@ a {
     padding: 20px 0;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 20px;
   }
   .section .left,
   .section .right {

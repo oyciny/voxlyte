@@ -26,4 +26,8 @@ router.post('/contact', (req, res) => {
     })
 })
 
+router.get('/coming-soon', (req, res) => {
+    res.render('coming-soon')
+})
+
 module.exports = router
