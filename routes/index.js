@@ -11,7 +11,7 @@ router.get('/contact', (req, res) => {
 
 router.post('/contact', (req, res) => {
     let mailOptions = {
-        from: `${req.body.name} <postmaster@voxlyte.com>`,
+        from: 'Postmaster <postmaster@voxlyte.com>',
         to: 'customer.relations@voxlyte.com',
         subject: 'This is an automated message from the Voxlyte Website Contact Form',
         text: `Name: ${req.body.name} | Email: ${req.body.email}`
