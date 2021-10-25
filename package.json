@@ -1,11 +1,11 @@
 {
-  "name": "axii",
+  "name": "voxlyte",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
-    "start": "pm2 app.js --name \"voxlyte\""
+    "start": "pm2 start app.js --name \"voxlyte\""
   },
   "author": "",
   "license": "ISC",
