@@ -51,7 +51,7 @@ a
     display flex
     justify-content space-evenly
     align-items center
-    height 100vh
+    min-height 100vh
     .left, .right
         margin 10px 20px
         text-align center
@@ -86,7 +86,7 @@ a
         .label
             font-size 14px
             margin 15px 0 5px 0
-        input
+        input, textarea
             width 100%
             padding 5px 0px 5px 3px
             outline none
@@ -94,6 +94,9 @@ a
             font-weight normal
             border-radius 5px
             border 2px solid text-color
+            resize none
+        textarea
+            height 100px
         .submit
             -webkit-appearance none
             margin-top 30px
@@ -109,13 +112,13 @@ a
                 transition 150ms opacity ease-in-out
 
 #section-1
-    height 80vh
+    min-height 80vh
 
 #section-2
     text-align right
 
 #coming-soon
-    height 80vh
+    min-height 80vh
 
 
 // ################################
@@ -139,7 +142,7 @@ a
         text-align center
         margin-bottom 20px
         .left, .right
-            padding 10px 0
+            margin 10px 0
             flex none
             width 80%
         .img
